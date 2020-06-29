@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.missing.MissingFragment"
+        android:label="실종된 강아지"
+        tools:layout="@layout/fragment_missing" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.qrcode.QrcodeFragment"
+        android:label="QR Code 생성"
+        tools:layout="@layout/fragment_qrcode" />
+    <fragment
+        android:id="@+id/navigation_blank"
+        android:name="com.example.myapplication.ui.adopt.AdoptFragment"
+        android:label="입양 게시판"
+        tools:layout="@layout/fragment_adopt" />
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.myapplication.ui.setting.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
